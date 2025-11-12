@@ -1,14 +1,16 @@
 /// The file is generated. Don't change anything here
-enum MetaEnchantment {
+import '../api/enchantment.dart';
+
+enum MetaEnchantment implements Enchantment {
 
   vanishing_curse('Vanishing Curse', 1, 1),
   mending('Mending', 1, 1),
   unbreaking('Unbreaking', 1, 3);
 
-  final String name;
+  final String displayName;
   final int minLevel;
   final int maxLevel;
 
-  const MetaEnchantment(this.name, this.minLevel, this.maxLevel);
+  const MetaEnchantment(this.displayName, this.minLevel, this.maxLevel);
 
 }

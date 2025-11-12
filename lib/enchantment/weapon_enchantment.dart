@@ -1,5 +1,7 @@
 /// The file is generated. Don't change anything here
-enum WeaponEnchantment {
+import '../api/enchantment.dart';
+
+enum WeaponEnchantment implements Enchantment {
 
   impaling('Impaling', 1, 5),
   wind_burst('Wind Burst', 1, 3),
@@ -23,10 +25,10 @@ enum WeaponEnchantment {
   infinity('Infinity', 1, 1),
   multishot('Multishot', 1, 1);
 
-  final String name;
+  final String displayName;
   final int minLevel;
   final int maxLevel;
 
-  const WeaponEnchantment(this.name, this.minLevel, this.maxLevel);
+  const WeaponEnchantment(this.displayName, this.minLevel, this.maxLevel);
 
 }

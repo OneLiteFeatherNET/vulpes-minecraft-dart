@@ -1,5 +1,7 @@
 /// The file is generated. Don't change anything here
-enum ArmorEnchantment {
+import '../api/enchantment.dart';
+
+enum ArmorEnchantment implements Enchantment {
 
   depth_strider('Depth Strider', 1, 3),
   binding_curse('Binding Curse', 1, 1),
@@ -15,10 +17,10 @@ enum ArmorEnchantment {
   aqua_affinity('Aqua Affinity', 1, 1),
   swift_sneak('Swift Sneak', 1, 3);
 
-  final String name;
+  final String displayName;
   final int minLevel;
   final int maxLevel;
 
-  const ArmorEnchantment(this.name, this.minLevel, this.maxLevel);
+  const ArmorEnchantment(this.displayName, this.minLevel, this.maxLevel);
 
 }
