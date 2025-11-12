@@ -3,16 +3,16 @@ import '../api/enchantment.dart';
 
 enum ToolEnchantment implements Enchantment {
 
-  efficiency('Efficiency', 1, 5),
-  luck_of_the_sea('Luck Of The Sea', 1, 3),
-  silk_touch('Silk Touch', 1, 1),
-  fortune('Fortune', 1, 3),
-  lure('Lure', 1, 3);
+  efficiency('Efficiency', "minecraft:efficiency", 5),
+  luckOfTheSea('Luckofthesea', "minecraft:luck_of_the_sea", 3),
+  silkTouch('Silktouch', "minecraft:silk_touch", 1),
+  fortune('Fortune', "minecraft:fortune", 3),
+  lure('Lure', "minecraft:lure", 3);
 
   final String displayName;
-  final int minLevel;
+  final String minecraftValue;
   final int maxLevel;
 
-  const ToolEnchantment(this.displayName, this.minLevel, this.maxLevel);
+  const ToolEnchantment(this.displayName, this.minecraftValue, this.maxLevel);
 
 }

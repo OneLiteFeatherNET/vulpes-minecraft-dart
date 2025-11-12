@@ -1,10 +1,6 @@
 /// Generated class for the sound sources. Don't edit this file manually
 enum MusicSound {
 
-  dragon_dragon('Dragon dragon', 'minecraft:music.dragon'),
-  overworld_deep_dark('Overworld deepdark', 'minecraft:music.overworld.deep_dark'),
-  overworld_jagged_peaks('Overworld jaggedpeaks', 'minecraft:music.overworld.jagged_peaks'),
-  overworld_badlands('Overworld badlands', 'minecraft:music.overworld.badlands'),
   overworld_snowy_slopes('Overworld snowyslopes', 'minecraft:music.overworld.snowy_slopes'),
   nether_crimson_forest('Nether crimsonforest', 'minecraft:music.nether.crimson_forest'),
   overworld_desert('Overworld desert', 'minecraft:music.overworld.desert'),
@@ -33,7 +29,11 @@ enum MusicSound {
   game_game('Game game', 'minecraft:music.game'),
   overworld_meadow('Overworld meadow', 'minecraft:music.overworld.meadow'),
   creative_creative('Creative creative', 'minecraft:music.creative'),
-  under_water_under_water('Underwater underwater', 'minecraft:music.under_water');
+  under_water_under_water('Underwater underwater', 'minecraft:music.under_water'),
+  dragon_dragon('Dragon dragon', 'minecraft:music.dragon'),
+  overworld_deep_dark('Overworld deepdark', 'minecraft:music.overworld.deep_dark'),
+  overworld_jagged_peaks('Overworld jaggedpeaks', 'minecraft:music.overworld.jagged_peaks'),
+  overworld_badlands('Overworld badlands', 'minecraft:music.overworld.badlands');
 
   final String name;
   final String key;

@@ -1,22 +1,6 @@
 /// Generated class for the sound sources. Don't edit this file manually
 enum ItemSound {
 
-  crossbow_shoot('Crossbow shoot', 'minecraft:item.crossbow.shoot'),
-  chorus_fruit_teleport('Chorusfruit teleport', 'minecraft:item.chorus_fruit.teleport'),
-  shovel_flatten('Shovel flatten', 'minecraft:item.shovel.flatten'),
-  lead_tied('Lead tied', 'minecraft:item.lead.tied'),
-  mace_smash_ground_heavy('Mace smashgroundheavy', 'minecraft:item.mace.smash_ground_heavy'),
-  lead_untied('Lead untied', 'minecraft:item.lead.untied'),
-  nether_wart_plant('Netherwart plant', 'minecraft:item.nether_wart.plant'),
-  bucket_empty_fish('Bucket emptyfish', 'minecraft:item.bucket.empty_fish'),
-  lodestone_compass_lock('Lodestonecompass lock', 'minecraft:item.lodestone_compass.lock'),
-  armor_equip_turtle('Armor equipturtle', 'minecraft:item.armor.equip_turtle'),
-  lead_break('Lead break', 'minecraft:item.lead.break'),
-  llama_carpet_unequip('Llamacarpet unequip', 'minecraft:item.llama_carpet.unequip'),
-  crossbow_loading_end('Crossbow loadingend', 'minecraft:item.crossbow.loading_end'),
-  shield_break('Shield break', 'minecraft:item.shield.break'),
-  armor_equip_diamond('Armor equipdiamond', 'minecraft:item.armor.equip_diamond'),
-  ominous_bottle_dispose('Ominousbottle dispose', 'minecraft:item.ominous_bottle.dispose'),
   armor_equip_netherite('Armor equipnetherite', 'minecraft:item.armor.equip_netherite'),
   firecharge_use('Firecharge use', 'minecraft:item.firecharge.use'),
   bucket_empty_axolotl('Bucket emptyaxolotl', 'minecraft:item.bucket.empty_axolotl'),
@@ -98,7 +82,23 @@ enum ItemSound {
   trident_riptide_2('Trident riptide2', 'minecraft:item.trident.riptide_2'),
   armor_equip_wolf('Armor equipwolf', 'minecraft:item.armor.equip_wolf'),
   armor_equip_chain('Armor equipchain', 'minecraft:item.armor.equip_chain'),
-  trident_riptide_1('Trident riptide1', 'minecraft:item.trident.riptide_1');
+  trident_riptide_1('Trident riptide1', 'minecraft:item.trident.riptide_1'),
+  crossbow_shoot('Crossbow shoot', 'minecraft:item.crossbow.shoot'),
+  chorus_fruit_teleport('Chorusfruit teleport', 'minecraft:item.chorus_fruit.teleport'),
+  shovel_flatten('Shovel flatten', 'minecraft:item.shovel.flatten'),
+  lead_tied('Lead tied', 'minecraft:item.lead.tied'),
+  mace_smash_ground_heavy('Mace smashgroundheavy', 'minecraft:item.mace.smash_ground_heavy'),
+  lead_untied('Lead untied', 'minecraft:item.lead.untied'),
+  nether_wart_plant('Netherwart plant', 'minecraft:item.nether_wart.plant'),
+  bucket_empty_fish('Bucket emptyfish', 'minecraft:item.bucket.empty_fish'),
+  lodestone_compass_lock('Lodestonecompass lock', 'minecraft:item.lodestone_compass.lock'),
+  armor_equip_turtle('Armor equipturtle', 'minecraft:item.armor.equip_turtle'),
+  lead_break('Lead break', 'minecraft:item.lead.break'),
+  llama_carpet_unequip('Llamacarpet unequip', 'minecraft:item.llama_carpet.unequip'),
+  crossbow_loading_end('Crossbow loadingend', 'minecraft:item.crossbow.loading_end'),
+  shield_break('Shield break', 'minecraft:item.shield.break'),
+  armor_equip_diamond('Armor equipdiamond', 'minecraft:item.armor.equip_diamond'),
+  ominous_bottle_dispose('Ominousbottle dispose', 'minecraft:item.ominous_bottle.dispose');
 
   final String name;
   final String key;

@@ -3,32 +3,32 @@ import '../api/enchantment.dart';
 
 enum WeaponEnchantment implements Enchantment {
 
-  impaling('Impaling', 1, 5),
-  wind_burst('Wind Burst', 1, 3),
-  bane_of_arthropods('Bane Of Arthropods', 1, 5),
-  punch('Punch', 1, 2),
-  flame('Flame', 1, 1),
-  riptide('Riptide', 1, 3),
-  fire_aspect('Fire Aspect', 1, 2),
-  loyalty('Loyalty', 1, 3),
-  sweeping_edge('Sweeping Edge', 1, 3),
-  quick_charge('Quick Charge', 1, 3),
-  density('Density', 1, 5),
-  power('Power', 1, 5),
-  channeling('Channeling', 1, 1),
-  looting('Looting', 1, 3),
-  breach('Breach', 1, 4),
-  piercing('Piercing', 1, 4),
-  sharpness('Sharpness', 1, 5),
-  knockback('Knockback', 1, 2),
-  smite('Smite', 1, 5),
-  infinity('Infinity', 1, 1),
-  multishot('Multishot', 1, 1);
+  impaling('Impaling', "minecraft:impaling", 5),
+  windBurst('Windburst', "minecraft:wind_burst", 3),
+  baneOfArthropods('Baneofarthropods', "minecraft:bane_of_arthropods", 5),
+  punch('Punch', "minecraft:punch", 2),
+  flame('Flame', "minecraft:flame", 1),
+  riptide('Riptide', "minecraft:riptide", 3),
+  fireAspect('Fireaspect', "minecraft:fire_aspect", 2),
+  loyalty('Loyalty', "minecraft:loyalty", 3),
+  sweepingEdge('Sweepingedge', "minecraft:sweeping_edge", 3),
+  quickCharge('Quickcharge', "minecraft:quick_charge", 3),
+  density('Density', "minecraft:density", 5),
+  power('Power', "minecraft:power", 5),
+  channeling('Channeling', "minecraft:channeling", 1),
+  looting('Looting', "minecraft:looting", 3),
+  breach('Breach', "minecraft:breach", 4),
+  piercing('Piercing', "minecraft:piercing", 4),
+  sharpness('Sharpness', "minecraft:sharpness", 5),
+  knockback('Knockback', "minecraft:knockback", 2),
+  smite('Smite', "minecraft:smite", 5),
+  infinity('Infinity', "minecraft:infinity", 1),
+  multishot('Multishot', "minecraft:multishot", 1);
 
   final String displayName;
-  final int minLevel;
+  final String minecraftValue;
   final int maxLevel;
 
-  const WeaponEnchantment(this.displayName, this.minLevel, this.maxLevel);
+  const WeaponEnchantment(this.displayName, this.minecraftValue, this.maxLevel);
 
 }

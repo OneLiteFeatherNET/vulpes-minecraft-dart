@@ -1,8 +1,6 @@
 /// Generated class for the sound sources. Don't edit this file manually
 enum AmbientSound {
 
-  crimson_forest_additions('Crimsonforest additions', 'minecraft:ambient.crimson_forest.additions'),
-  warped_forest_loop('Warpedforest loop', 'minecraft:ambient.warped_forest.loop'),
   basalt_deltas_additions('Basaltdeltas additions', 'minecraft:ambient.basalt_deltas.additions'),
   underwater_loop('Underwater loop', 'minecraft:ambient.underwater.loop'),
   soul_sand_valley_mood('Soulsandvalley mood', 'minecraft:ambient.soul_sand_valley.mood'),
@@ -24,7 +22,9 @@ enum AmbientSound {
   warped_forest_mood('Warpedforest mood', 'minecraft:ambient.warped_forest.mood'),
   nether_wastes_loop('Netherwastes loop', 'minecraft:ambient.nether_wastes.loop'),
   underwater_ultra_rare('Underwater ultrarare',
-      'minecraft:ambient.underwater.loop.additions.ultra_rare');
+      'minecraft:ambient.underwater.loop.additions.ultra_rare'),
+  crimson_forest_additions('Crimsonforest additions', 'minecraft:ambient.crimson_forest.additions'),
+  warped_forest_loop('Warpedforest loop', 'minecraft:ambient.warped_forest.loop');
 
   final String name;
   final String key;
