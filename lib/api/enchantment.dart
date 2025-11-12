@@ -13,7 +13,7 @@ abstract class Enchantment {
   /// The current level of this enchantment.
   ///
   /// Usually starts at `1` and may not exceed [maxLevel].
-  int get level;
+  int get minLevel;
 
   /// The maximum allowed level for this enchantment.
   int get maxLevel;
