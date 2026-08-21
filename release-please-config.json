@@ -8,5 +8,6 @@
       "package-name": "vulpes-minecraft-dart",
       "changelog-path": "CHANGELOG.md"
     }
-  }
+  },
+  "bootstrap-sha": "3937d1a8fb3ae1aae9fb6a7ac78e6e747e45a1b7"
 }
