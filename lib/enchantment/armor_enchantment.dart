@@ -1,15 +1,15 @@
 /// The file is generated. Don't change anything here
-import '../api/enchantment.dart';
+import '../api/enchantment';
 
 enum ArmorEnchantment implements Enchantment {
 
   depthStrider('Depthstrider', "minecraft:depth_strider", 3),
   bindingCurse('Bindingcurse', "minecraft:binding_curse", 1),
   blastProtection('Blastprotection', "minecraft:blast_protection", 4),
-  frostWalker('Frostwalker', "minecraft:frost_walker", 2),
   protection('Protection', "minecraft:protection", 4),
-  fireProtection('Fireprotection', "minecraft:fire_protection", 4),
+  frostWalker('Frostwalker', "minecraft:frost_walker", 2),
   respiration('Respiration', "minecraft:respiration", 3),
+  fireProtection('Fireprotection', "minecraft:fire_protection", 4),
   soulSpeed('Soulspeed', "minecraft:soul_speed", 3),
   featherFalling('Featherfalling', "minecraft:feather_falling", 4),
   projectileProtection('Projectileprotection', "minecraft:projectile_protection", 4),

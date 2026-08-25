@@ -1,4 +1,4 @@
-/// Generated class for the sound sources. Don't edit this file manually
+/// Generated class for the sound types. Don't edit this file manually
 enum SoundType {
 
   block('Block', 'BLOCK'),

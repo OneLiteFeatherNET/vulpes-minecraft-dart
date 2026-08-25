@@ -1,5 +1,5 @@
 /// The file is generated. Don't change anything here
-import '../api/enchantment.dart';
+import '../api/enchantment';
 
 enum ToolEnchantment implements Enchantment {
 
