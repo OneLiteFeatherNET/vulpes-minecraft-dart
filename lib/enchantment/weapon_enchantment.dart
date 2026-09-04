@@ -1,5 +1,5 @@
 /// The file is generated. Don't change anything here
-import '../api/enchantment';
+import '../api/enchantment.dart';
 
 enum WeaponEnchantment implements Enchantment {
 
