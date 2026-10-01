@@ -3,7 +3,7 @@
 /// The values are normalized at generation time, so the search doesn't need to touch them again.
 abstract interface class SearchableMaterial {
   /// The key of the material, e.g. `minecraft:diamond_sword`.
-  String get material;
+  String get key;
 
   /// The lowercase words of the material separated by a space, e.g. `diamond sword`.
   String get searchKey;
