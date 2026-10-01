@@ -1,27 +1,27 @@
 /// The file is generated. Don't change anything here
 enum DisplayEntityType {
 
-  itemFrame('Item Frame', 'minecraft:item_frame'),
-  itemDisplay('Item Display', 'minecraft:item_display'),
-  item('Item', 'minecraft:item'),
-  lightningBolt('Lightning Bolt', 'minecraft:lightning_bolt'),
-  textDisplay('Text Display', 'minecraft:text_display'),
-  leashKnot('Leash Knot', 'minecraft:leash_knot'),
   areaEffectCloud('Area Effect Cloud', 'minecraft:area_effect_cloud'),
-  marker('Marker', 'minecraft:marker'),
+  textDisplay('Text Display', 'minecraft:text_display'),
   experienceOrb('Experience Orb', 'minecraft:experience_orb'),
-  fallingBlock('Falling Block', 'minecraft:falling_block'),
-  mannequin('Mannequin', 'minecraft:mannequin'),
-  armorStand('Armor Stand', 'minecraft:armor_stand'),
-  endCrystal('End Crystal', 'minecraft:end_crystal'),
-  glowItemFrame('Glow Item Frame', 'minecraft:glow_item_frame'),
-  blockDisplay('Block Display', 'minecraft:block_display'),
-  player('Player', 'minecraft:player'),
+  marker('Marker', 'minecraft:marker'),
   painting('Painting', 'minecraft:painting'),
-  evokerFangs('Evoker Fangs', 'minecraft:evoker_fangs'),
-  interaction('Interaction', 'minecraft:interaction'),
   tnt('Tnt', 'minecraft:tnt'),
-  ominousItemSpawner('Ominous Item Spawner', 'minecraft:ominous_item_spawner');
+  player('Player', 'minecraft:player'),
+  evokerFangs('Evoker Fangs', 'minecraft:evoker_fangs'),
+  glowItemFrame('Glow Item Frame', 'minecraft:glow_item_frame'),
+  fallingBlock('Falling Block', 'minecraft:falling_block'),
+  armorStand('Armor Stand', 'minecraft:armor_stand'),
+  itemDisplay('Item Display', 'minecraft:item_display'),
+  endCrystal('End Crystal', 'minecraft:end_crystal'),
+  mannequin('Mannequin', 'minecraft:mannequin'),
+  blockDisplay('Block Display', 'minecraft:block_display'),
+  lightningBolt('Lightning Bolt', 'minecraft:lightning_bolt'),
+  item('Item', 'minecraft:item'),
+  itemFrame('Item Frame', 'minecraft:item_frame'),
+  ominousItemSpawner('Ominous Item Spawner', 'minecraft:ominous_item_spawner'),
+  leashKnot('Leash Knot', 'minecraft:leash_knot'),
+  interaction('Interaction', 'minecraft:interaction');
 
   final String displayName;
   final String type;

@@ -1,19 +1,19 @@
 /// The file is generated. Don't change anything here
 enum WaterEntityType {
 
-  cod('Cod', 'minecraft:cod'),
   dolphin('Dolphin', 'minecraft:dolphin'),
-  salmon('Salmon', 'minecraft:salmon'),
-  zombieNautilus('Zombie Nautilus', 'minecraft:zombie_nautilus'),
-  bat('Bat', 'minecraft:bat'),
   axolotl('Axolotl', 'minecraft:axolotl'),
-  tropicalFish('Tropical Fish', 'minecraft:tropical_fish'),
-  squid('Squid', 'minecraft:squid'),
-  tadpole('Tadpole', 'minecraft:tadpole'),
-  glowSquid('Glow Squid', 'minecraft:glow_squid'),
-  pufferfish('Pufferfish', 'minecraft:pufferfish'),
   nautilus('Nautilus', 'minecraft:nautilus'),
-  turtle('Turtle', 'minecraft:turtle');
+  cod('Cod', 'minecraft:cod'),
+  salmon('Salmon', 'minecraft:salmon'),
+  tadpole('Tadpole', 'minecraft:tadpole'),
+  tropicalFish('Tropical Fish', 'minecraft:tropical_fish'),
+  pufferfish('Pufferfish', 'minecraft:pufferfish'),
+  bat('Bat', 'minecraft:bat'),
+  turtle('Turtle', 'minecraft:turtle'),
+  squid('Squid', 'minecraft:squid'),
+  zombieNautilus('Zombie Nautilus', 'minecraft:zombie_nautilus'),
+  glowSquid('Glow Squid', 'minecraft:glow_squid');
 
   final String displayName;
   final String type;
