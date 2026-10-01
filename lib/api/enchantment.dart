@@ -10,8 +10,8 @@ abstract class Enchantment {
   /// The name displayed to the user, e.g., `"Sharpness"` or `"Flame"`.
   String get displayName;
 
-  /// The key of the enchantment
-  String get minecraftValue;
+  /// The key of the enchantment, e.g. `minecraft:sharpness`.
+  String get key;
 
   /// The maximum allowed level for this enchantment.
   int get maxLevel;
