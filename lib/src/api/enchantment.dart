@@ -1,3 +1,5 @@
+import 'keyed.dart';
+
 /// Represents a generic enchantment that can be applied to an item.
 ///
 /// Each enchantment has a [displayName] used for presentation,
@@ -5,13 +7,7 @@
 ///
 /// This interface can be implemented by enums or classes to define
 /// specific enchantments.
-abstract class Enchantment {
-
-  /// The name displayed to the user, e.g., `"Sharpness"` or `"Flame"`.
-  String get displayName;
-
-  /// The key of the enchantment, e.g. `minecraft:sharpness`.
-  String get key;
+abstract class Enchantment implements Keyed {
 
   /// The maximum allowed level for this enchantment.
   int get maxLevel;

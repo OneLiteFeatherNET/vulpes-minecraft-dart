@@ -7,44 +7,47 @@
 /// Example:
 /// ```dart
 /// // Construct from individual components
-/// const redColor = Color(255, 0, 0);
+/// const redColor = RgbColor(255, 0, 0);
 ///
 /// // Construct from a packed 24-bit integer
-/// const yellowColor = Color.fromRGB(0xffff00);
+/// const yellowColor = RgbColor.fromRGB(0xffff00);
 ///
 /// // Parse from a hex string
-/// final greenColor = Color.fromHexString('#55ff55');
+/// final greenColor = RgbColor.fromHexString('#55ff55');
 ///
 /// print(yellowColor.red);           // 255
 /// print(yellowColor.green);         // 255
 /// print(yellowColor.blue);          // 0
 /// print(yellowColor.value);         // 16776960 (0xffff00)
 /// print(yellowColor.asHexString()); // #ffff00
+///
+/// // Use the color in Flutter
+/// final flutterColor = Color(yellowColor.argb);
 /// ```
-class Color {
+class RgbColor {
   /// The packed 24-bit RGB integer value (`0xRRGGBB`).
   final int value;
 
-  /// Creates a new [Color] from individual [red], [green], and [blue] components.
+  /// Creates a new [RgbColor] from individual [red], [green], and [blue] components.
   ///
   /// Each component must be an integer between `0` and `255` (inclusive).
-  const Color(int red, int green, int blue)
+  const RgbColor(int red, int green, int blue)
       : assert(red >= 0 && red <= 255, 'red must be between 0 and 255'),
         assert(green >= 0 && green <= 255, 'green must be between 0 and 255'),
         assert(blue >= 0 && blue <= 255, 'blue must be between 0 and 255'),
         value = ((red & 0xFF) << 16) | ((green & 0xFF) << 8) | (blue & 0xFF);
 
-  /// Creates a new [Color] from a packed 24-bit RGB integer value.
+  /// Creates a new [RgbColor] from a packed 24-bit RGB integer value.
   ///
   /// The [rgb] value is expected to be in the format `0xRRGGBB`.
   /// The red component occupies bits 16-23, green occupies bits 8-15,
   /// and blue occupies bits 0-7.
-  const Color.fromRGB(int rgb) : value = rgb & 0xFFFFFF;
+  const RgbColor.fromRGB(int rgb) : value = rgb & 0xFFFFFF;
 
-  /// Parses a hex string formatted as `#RRGGBB` or `RRGGBB` into a [Color].
-  factory Color.fromHexString(String hex) {
+  /// Parses a hex string formatted as `#RRGGBB` or `RRGGBB` into a [RgbColor].
+  factory RgbColor.fromHexString(String hex) {
     final cleanHex = hex.startsWith('#') ? hex.substring(1) : hex;
-    return Color.fromRGB(int.parse(cleanHex, radix: 16));
+    return RgbColor.fromRGB(int.parse(cleanHex, radix: 16));
   }
 
   /// The red component of the color in the range `[0, 255]`.
@@ -61,6 +64,11 @@ class Color {
   /// Corresponds to `RGBLike.value()` in Adventure.
   int asRGB() => value;
 
+  /// Returns the color as a packed 32-bit ARGB integer (`0xAARRGGBB`) with full opacity.
+  ///
+  /// This is the format Flutter's `Color` expects, e.g. `Color(dyeColor.textColor.argb)`.
+  int get argb => 0xFF000000 | value;
+
   /// Returns the color formatted as a lowercase hex string prefixed with `#` (`#rrggbb`).
   ///
   /// Corresponds to `TextColor.asHexString()` in Adventure.
@@ -70,18 +78,18 @@ class Color {
   ///
   /// The parameter [t] is clamped to the range `[0.0, 1.0]`.
   /// Corresponds to `TextColor.lerp()` in Adventure.
-  static Color lerp(double t, Color a, Color b) {
+  static RgbColor lerp(double t, RgbColor a, RgbColor b) {
     final clampedT = t.clamp(0.0, 1.0);
     final r = (a.red + (b.red - a.red) * clampedT).round();
     final g = (a.green + (b.green - a.green) * clampedT).round();
     final bComp = (a.blue + (b.blue - a.blue) * clampedT).round();
-    return Color(r, g, bComp);
+    return RgbColor(r, g, bComp);
   }
 
   @override
   bool operator ==(Object other) =>
       identical(this, other) ||
-          other is Color &&
+          other is RgbColor &&
               runtimeType == other.runtimeType &&
               value == other.value;
 
@@ -90,5 +98,5 @@ class Color {
 
   @override
   String toString() =>
-      'Color(red: $red, green: $green, blue: $blue, hex: ${asHexString()})';
+      'RgbColor(red: $red, green: $green, blue: $blue, hex: ${asHexString()})';
 }
