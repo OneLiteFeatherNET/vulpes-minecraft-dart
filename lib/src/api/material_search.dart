@@ -1,10 +1,9 @@
+import 'keyed.dart';
+
 /// A material which can be found through a [MaterialSearch].
 ///
 /// The values are normalized at generation time, so the search doesn't need to touch them again.
-abstract interface class SearchableMaterial {
-  /// The key of the material, e.g. `minecraft:diamond_sword`.
-  String get material;
-
+abstract interface class SearchableMaterial implements Keyed {
   /// The lowercase words of the material separated by a space, e.g. `diamond sword`.
   String get searchKey;
 
@@ -16,7 +15,7 @@ abstract interface class SearchableMaterial {
 }
 
 /// A category which can be used to limit the result of a [MaterialSearch].
-abstract interface class SearchCategory {
+abstract interface class SearchCategory implements Keyed {
   /// The bit of the category in [SearchableMaterial.categories].
   int get mask;
 }

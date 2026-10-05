@@ -1,0 +1,2 @@
+# Marks the output of the Stelaris CLI as generated, so diffs of an update are collapsed
+lib/src/generated/** linguist-generated=true
