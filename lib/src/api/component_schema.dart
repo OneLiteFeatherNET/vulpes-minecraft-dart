@@ -42,6 +42,11 @@ final class TextSchema extends ComponentSchema {
   const TextSchema();
 }
 
+/// An RGB color, written as a single integer in the form `0xRRGGBB`.
+final class ColorSchema extends ComponentSchema {
+  const ColorSchema();
+}
+
 /// A namespaced key. [registry] names the registry the key points into, if known.
 final class KeySchema extends ComponentSchema {
   final String? registry;
