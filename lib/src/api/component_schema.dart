@@ -121,9 +121,6 @@ final class ComponentSpec implements Keyed {
   /// The schema of the component value.
   final ComponentSchema schema;
 
-  /// Whether Stelaris handles the component with a dedicated editor.
-  final bool managed;
-
   /// Whether the component can be set by a user. It is false for runtime state.
   final bool editable;
 
@@ -133,7 +130,6 @@ final class ComponentSpec implements Keyed {
     this.category,
     this.javaField,
     this.schema, {
-    this.managed = false,
     this.editable = true,
   });
 }
