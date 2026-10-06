@@ -3,8 +3,11 @@ import 'keyed.dart';
 /// Groups the data components, so a user interface can offer them in sections instead of one long list.
 ///
 /// The order of the entries is the order in which the sections should be shown.
-/// The entries have to match the categories the Stelaris CLI assigns in the generated catalog.
+/// The entries have to match the categories the Stelaris CLI assigns in the generated catalog,
+/// except [custom], which the CLI never assigns.
 enum ComponentCategory implements Keyed {
+  /// Components an application adds on top of the vanilla ones, e.g. `stelaris:material`.
+  custom('Custom', 'custom'),
   properties('Properties', 'properties'),
   display('Display', 'display'),
   enchantment('Enchantment', 'enchantment'),
