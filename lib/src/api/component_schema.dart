@@ -54,6 +54,15 @@ final class KeySchema extends ComponentSchema {
   const KeySchema({this.registry});
 }
 
+/// A set of registry entries, written either as a list of keys or as a single `#tag` reference,
+/// e.g. `['minecraft:stone']` or `'#minecraft:logs'`. A tag can't be an entry of the list.
+/// [registry] names the registry the keys and the tag point into, if known.
+final class RegistryTagSchema extends ComponentSchema {
+  final String? registry;
+
+  const RegistryTagSchema({this.registry});
+}
+
 /// One value out of [values].
 final class EnumSchema extends ComponentSchema {
   final List<String> values;
