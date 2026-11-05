@@ -7,14 +7,15 @@ final Map<String, BossBarOverlay> _bossBarOverlayByKey = {for (final e in BossBa
     e.key: e};
 
 enum BossBarOverlay implements Keyed {
-
   progress('Progress', 'progress'),
   notched6('Notched 6', 'notched_6'),
   notched10('Notched 10', 'notched_10'),
   notched12('Notched 12', 'notched_12'),
   notched20('Notched 20', 'notched_20');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const BossBarOverlay(this.displayName, this.key);

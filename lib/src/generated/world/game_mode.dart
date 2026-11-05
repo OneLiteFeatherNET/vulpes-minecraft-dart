@@ -6,13 +6,14 @@ import '../../api/keyed.dart';
 final Map<String, GameMode> _gameModeByKey = {for (final e in GameMode.values) e.key: e};
 
 enum GameMode implements Keyed {
-
   survival('Survival', 'survival', 0),
   creative('Creative', 'creative', 1),
   adventure('Adventure', 'adventure', 2),
   spectator('Spectator', 'spectator', 3);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int id;
 

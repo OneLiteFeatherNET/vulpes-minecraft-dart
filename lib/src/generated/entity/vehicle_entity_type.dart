@@ -7,7 +7,6 @@ final Map<String, VehicleEntityType> _vehicleEntityTypeByKey = {for (final e in
     VehicleEntityType.values) e.key: e};
 
 enum VehicleEntityType implements Keyed {
-
   acaciaBoat('Acacia Boat', 'minecraft:acacia_boat'),
   acaciaChestBoat('Acacia Chest Boat', 'minecraft:acacia_chest_boat'),
   bambooChestRaft('Bamboo Chest Raft', 'minecraft:bamboo_chest_raft'),
@@ -36,7 +35,9 @@ enum VehicleEntityType implements Keyed {
   spruceChestBoat('Spruce Chest Boat', 'minecraft:spruce_chest_boat'),
   tntMinecart('Tnt Minecart', 'minecraft:tnt_minecart');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const VehicleEntityType(this.displayName, this.key);

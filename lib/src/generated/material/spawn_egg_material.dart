@@ -7,7 +7,6 @@ final Map<String, SpawnEggMaterial> _spawnEggMaterialByKey = {for (final e in
     SpawnEggMaterial.values) e.key: e};
 
 enum SpawnEggMaterial implements Keyed {
-
   allaySpawnEgg('Allay Spawn Egg', 'minecraft:allay_spawn_egg', 64),
   armadilloSpawnEgg('Armadillo Spawn Egg', 'minecraft:armadillo_spawn_egg', 64),
   axolotlSpawnEgg('Axolotl Spawn Egg', 'minecraft:axolotl_spawn_egg', 64),
@@ -97,7 +96,9 @@ enum SpawnEggMaterial implements Keyed {
   zombieVillagerSpawnEgg('Zombie Villager Spawn Egg', 'minecraft:zombie_villager_spawn_egg', 64),
   zombifiedPiglinSpawnEgg('Zombified Piglin Spawn Egg', 'minecraft:zombified_piglin_spawn_egg', 64);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int maxStackSize;
 

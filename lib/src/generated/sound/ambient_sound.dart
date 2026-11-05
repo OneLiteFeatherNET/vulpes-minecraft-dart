@@ -7,7 +7,6 @@ final Map<String, AmbientSound> _ambientSoundByKey = {for (final e in AmbientSou
     e};
 
 enum AmbientSound implements Keyed {
-
   basaltDeltasAdditions('Basalt Deltas additions', 'minecraft:ambient.basalt_deltas.additions'),
   basaltDeltasLoop('Basalt Deltas loop', 'minecraft:ambient.basalt_deltas.loop'),
   basaltDeltasMood('Basalt Deltas mood', 'minecraft:ambient.basalt_deltas.mood'),
@@ -33,7 +32,9 @@ enum AmbientSound implements Keyed {
   warpedForestLoop('Warped Forest loop', 'minecraft:ambient.warped_forest.loop'),
   warpedForestMood('Warped Forest mood', 'minecraft:ambient.warped_forest.mood');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const AmbientSound(this.displayName, this.key);

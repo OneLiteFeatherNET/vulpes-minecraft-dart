@@ -7,7 +7,6 @@ final Map<String, BossBarColor> _bossBarColorByKey = {for (final e in BossBarCol
     e};
 
 enum BossBarColor implements Keyed {
-
   pink('Pink', 'pink'),
   blue('Blue', 'blue'),
   red('Red', 'red'),
@@ -16,7 +15,9 @@ enum BossBarColor implements Keyed {
   purple('Purple', 'purple'),
   white('White', 'white');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const BossBarColor(this.displayName, this.key);

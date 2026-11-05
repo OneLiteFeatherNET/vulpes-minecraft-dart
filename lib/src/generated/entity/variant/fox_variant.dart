@@ -6,11 +6,12 @@ import '../../../api/keyed.dart';
 final Map<String, FoxVariant> _foxVariantByKey = {for (final e in FoxVariant.values) e.key: e};
 
 enum FoxVariant implements Keyed {
-
   red('Red', 'red', 0),
   snow('Snow', 'snow', 1);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int id;
 

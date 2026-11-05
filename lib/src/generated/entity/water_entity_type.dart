@@ -7,7 +7,6 @@ final Map<String, WaterEntityType> _waterEntityTypeByKey = {for (final e in Wate
     e.key: e};
 
 enum WaterEntityType implements Keyed {
-
   axolotl('Axolotl', 'minecraft:axolotl'),
   bat('Bat', 'minecraft:bat'),
   cod('Cod', 'minecraft:cod'),
@@ -22,7 +21,9 @@ enum WaterEntityType implements Keyed {
   turtle('Turtle', 'minecraft:turtle'),
   zombieNautilus('Zombie Nautilus', 'minecraft:zombie_nautilus');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const WaterEntityType(this.displayName, this.key);

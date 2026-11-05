@@ -11,13 +11,14 @@ final Map<String, EnchantmentGroup> _enchantmentGroupByKey = {for (final e in
     EnchantmentGroup.values) e.key: e};
 
 enum EnchantmentGroup implements Keyed {
-
   armor('Armor', 'armor'),
   weapon('Weapon', 'weapon'),
   tool('Tool', 'tool'),
   meta('Meta', 'meta');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const EnchantmentGroup(this.displayName, this.key);

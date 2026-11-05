@@ -7,7 +7,6 @@ final Map<String, DisplayEntityType> _displayEntityTypeByKey = {for (final e in
     DisplayEntityType.values) e.key: e};
 
 enum DisplayEntityType implements Keyed {
-
   areaEffectCloud('Area Effect Cloud', 'minecraft:area_effect_cloud'),
   armorStand('Armor Stand', 'minecraft:armor_stand'),
   blockDisplay('Block Display', 'minecraft:block_display'),
@@ -30,7 +29,9 @@ enum DisplayEntityType implements Keyed {
   textDisplay('Text Display', 'minecraft:text_display'),
   tnt('Tnt', 'minecraft:tnt');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const DisplayEntityType(this.displayName, this.key);

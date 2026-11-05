@@ -7,7 +7,6 @@ final Map<String, VillagerType> _villagerTypeByKey = {for (final e in VillagerTy
     e};
 
 enum VillagerType implements Keyed {
-
   desert('Desert', 'minecraft:desert'),
   jungle('Jungle', 'minecraft:jungle'),
   plains('Plains', 'minecraft:plains'),
@@ -16,7 +15,9 @@ enum VillagerType implements Keyed {
   swamp('Swamp', 'minecraft:swamp'),
   taiga('Taiga', 'minecraft:taiga');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const VillagerType(this.displayName, this.key);

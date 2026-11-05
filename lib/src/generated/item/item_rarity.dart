@@ -6,13 +6,14 @@ import '../../api/keyed.dart';
 final Map<String, ItemRarity> _itemRarityByKey = {for (final e in ItemRarity.values) e.key: e};
 
 enum ItemRarity implements Keyed {
-
   common('Common', 'common'),
   uncommon('Uncommon', 'uncommon'),
   rare('Rare', 'rare'),
   epic('Epic', 'epic');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const ItemRarity(this.displayName, this.key);

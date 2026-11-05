@@ -7,7 +7,6 @@ final Map<String, BannerPattern> _bannerPatternByKey = {for (final e in BannerPa
     e};
 
 enum BannerPattern implements Keyed {
-
   base('Base', 'minecraft:base', 'minecraft:base', 'block.minecraft.banner.base'),
   border('Border', 'minecraft:border', 'minecraft:border', 'block.minecraft.banner.border'),
   bricks('Bricks', 'minecraft:bricks', 'minecraft:bricks', 'block.minecraft.banner.bricks'),
@@ -81,7 +80,9 @@ enum BannerPattern implements Keyed {
   trianglesTop('Triangles Top', 'minecraft:triangles_top', 'minecraft:triangles_top',
       'block.minecraft.banner.triangles_top');
 
+  @override
   final String displayName;
+  @override
   final String key;
   final String assetId;
   final String translationKey;

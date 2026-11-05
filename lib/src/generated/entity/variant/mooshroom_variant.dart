@@ -7,11 +7,12 @@ final Map<String, MooshroomVariant> _mooshroomVariantByKey = {for (final e in
     MooshroomVariant.values) e.key: e};
 
 enum MooshroomVariant implements Keyed {
-
   red('Red', 'red'),
   brown('Brown', 'brown');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const MooshroomVariant(this.displayName, this.key);

@@ -7,7 +7,6 @@ final Map<String, ProjectileEntityType> _projectileEntityTypeByKey = {for (final
     ProjectileEntityType.values) e.key: e};
 
 enum ProjectileEntityType implements Keyed {
-
   arrow('Arrow', 'minecraft:arrow'),
   breezeWindCharge('Breeze Wind Charge', 'minecraft:breeze_wind_charge'),
   dragonFireball('Dragon Fireball', 'minecraft:dragon_fireball'),
@@ -29,7 +28,9 @@ enum ProjectileEntityType implements Keyed {
   windCharge('Wind Charge', 'minecraft:wind_charge'),
   witherSkull('Wither Skull', 'minecraft:wither_skull');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const ProjectileEntityType(this.displayName, this.key);

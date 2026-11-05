@@ -6,13 +6,14 @@ import '../../api/keyed.dart';
 final Map<String, Difficulty> _difficultyByKey = {for (final e in Difficulty.values) e.key: e};
 
 enum Difficulty implements Keyed {
-
   peaceful('Peaceful', 'peaceful', 0),
   easy('Easy', 'easy', 1),
   normal('Normal', 'normal', 2),
   hard('Hard', 'hard', 3);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int id;
 

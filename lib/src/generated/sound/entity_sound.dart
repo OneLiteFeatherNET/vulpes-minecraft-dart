@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, EntitySound> _entitySoundByKey = {for (final e in EntitySound.values) e.key: e};
 
 enum EntitySound implements Keyed {
-
   allayAmbientWithItem('Allay ambient With Item', 'minecraft:entity.allay.ambient_with_item'),
   allayAmbientWithoutItem('Allay ambient Without Item',
       'minecraft:entity.allay.ambient_without_item'),
@@ -945,7 +944,9 @@ enum EntitySound implements Keyed {
   zombifiedPiglinDeath('Zombified Piglin death', 'minecraft:entity.zombified_piglin.death'),
   zombifiedPiglinHurt('Zombified Piglin hurt', 'minecraft:entity.zombified_piglin.hurt');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const EntitySound(this.displayName, this.key);

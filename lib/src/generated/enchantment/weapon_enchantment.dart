@@ -7,7 +7,6 @@ final Map<String, WeaponEnchantment> _weaponEnchantmentByKey = {for (final e in
     WeaponEnchantment.values) e.key: e};
 
 enum WeaponEnchantment implements Enchantment {
-
   baneOfArthropods('Bane Of Arthropods', 'minecraft:bane_of_arthropods', 5),
   breach('Breach', 'minecraft:breach', 4),
   channeling('Channeling', 'minecraft:channeling', 1),
@@ -31,8 +30,11 @@ enum WeaponEnchantment implements Enchantment {
   sweepingEdge('Sweeping Edge', 'minecraft:sweeping_edge', 3),
   windBurst('Wind Burst', 'minecraft:wind_burst', 3);
 
+  @override
   final String displayName;
+  @override
   final String key;
+  @override
   final int maxLevel;
 
   const WeaponEnchantment(this.displayName, this.key, this.maxLevel);

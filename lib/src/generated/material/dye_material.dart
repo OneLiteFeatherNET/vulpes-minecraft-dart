@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, DyeMaterial> _dyeMaterialByKey = {for (final e in DyeMaterial.values) e.key: e};
 
 enum DyeMaterial implements Keyed {
-
   blackDye('Black Dye', 'minecraft:black_dye', 64),
   blueDye('Blue Dye', 'minecraft:blue_dye', 64),
   brownDye('Brown Dye', 'minecraft:brown_dye', 64),
@@ -24,7 +23,9 @@ enum DyeMaterial implements Keyed {
   whiteDye('White Dye', 'minecraft:white_dye', 64),
   yellowDye('Yellow Dye', 'minecraft:yellow_dye', 64);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int maxStackSize;
 

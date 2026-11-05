@@ -7,7 +7,6 @@ final Map<String, RabbitVariant> _rabbitVariantByKey = {for (final e in RabbitVa
     e};
 
 enum RabbitVariant implements Keyed {
-
   brown('Brown', 'brown', 0),
   white('White', 'white', 1),
   black('Black', 'black', 2),
@@ -16,7 +15,9 @@ enum RabbitVariant implements Keyed {
   saltAndPepper('Salt And Pepper', 'salt_and_pepper', 5),
   killerBunny('Killer Bunny', 'killer_bunny', 6);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int id;
 

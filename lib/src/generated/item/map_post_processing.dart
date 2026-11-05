@@ -7,11 +7,12 @@ final Map<String, MapPostProcessing> _mapPostProcessingByKey = {for (final e in
     MapPostProcessing.values) e.key: e};
 
 enum MapPostProcessing implements Keyed {
-
   lock('Lock', 'lock'),
   scale('Scale', 'scale');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const MapPostProcessing(this.displayName, this.key);

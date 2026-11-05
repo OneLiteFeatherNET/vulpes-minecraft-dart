@@ -7,7 +7,6 @@ import '../../api/rgb_color.dart';
 final Map<String, DyeColor> _dyeColorByKey = {for (final e in DyeColor.values) e.key: e};
 
 enum DyeColor implements Keyed {
-
   white('White', 'white', RgbColor.fromRGB(0xf9fffe), RgbColor.fromRGB(0xffffff),
       RgbColor.fromRGB(0xf0f0f0), 8),
   orange('Orange', 'orange', RgbColor.fromRGB(0xf9801d), RgbColor.fromRGB(0xff681f),
@@ -41,7 +40,9 @@ enum DyeColor implements Keyed {
   black('Black', 'black', RgbColor.fromRGB(0x1d1d21), RgbColor.fromRGB(0x000000),
       RgbColor.fromRGB(0x1e1b1b), 29);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final RgbColor textureDiffuseColor;
   final RgbColor textColor;

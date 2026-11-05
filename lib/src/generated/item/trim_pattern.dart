@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, TrimPattern> _trimPatternByKey = {for (final e in TrimPattern.values) e.key: e};
 
 enum TrimPattern implements Keyed {
-
   bolt('Bolt', 'minecraft:bolt', 'minecraft:bolt', false),
   coast('Coast', 'minecraft:coast', 'minecraft:coast', false),
   dune('Dune', 'minecraft:dune', 'minecraft:dune', false),
@@ -26,7 +25,9 @@ enum TrimPattern implements Keyed {
   wayfinder('Wayfinder', 'minecraft:wayfinder', 'minecraft:wayfinder', false),
   wild('Wild', 'minecraft:wild', 'minecraft:wild', false);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final String assetId;
   final bool decal;

@@ -7,7 +7,6 @@ final Map<String, ArmorMaterial> _armorMaterialByKey = {for (final e in ArmorMat
     e};
 
 enum ArmorMaterial implements Keyed {
-
   carvedPumpkin('Carved Pumpkin', 'minecraft:carved_pumpkin', 64),
   chainmailBoots('Chainmail Boots', 'minecraft:chainmail_boots', 1),
   chainmailChestplate('Chainmail Chestplate', 'minecraft:chainmail_chestplate', 1),
@@ -47,7 +46,9 @@ enum ArmorMaterial implements Keyed {
   witherSkeletonSkull('Wither Skeleton Skull', 'minecraft:wither_skeleton_skull', 64),
   zombieHead('Zombie Head', 'minecraft:zombie_head', 64);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int maxStackSize;
 

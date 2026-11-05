@@ -7,7 +7,6 @@ final Map<String, TrimMaterial> _trimMaterialByKey = {for (final e in TrimMateri
     e};
 
 enum TrimMaterial implements Keyed {
-
   amethyst('Amethyst', 'minecraft:amethyst', 'amethyst'),
   copper('Copper', 'minecraft:copper', 'copper'),
   diamond('Diamond', 'minecraft:diamond', 'diamond'),
@@ -20,7 +19,9 @@ enum TrimMaterial implements Keyed {
   redstone('Redstone', 'minecraft:redstone', 'redstone'),
   resin('Resin', 'minecraft:resin', 'resin');
 
+  @override
   final String displayName;
+  @override
   final String key;
   final String assetId;
 

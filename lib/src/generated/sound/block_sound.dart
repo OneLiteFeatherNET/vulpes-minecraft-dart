@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, BlockSound> _blockSoundByKey = {for (final e in BlockSound.values) e.key: e};
 
 enum BlockSound implements Keyed {
-
   amethystBlockBreak('Amethyst Block break', 'minecraft:block.amethyst_block.break'),
   amethystBlockChime('Amethyst Block chime', 'minecraft:block.amethyst_block.chime'),
   amethystBlockFall('Amethyst Block fall', 'minecraft:block.amethyst_block.fall'),
@@ -916,7 +915,9 @@ enum BlockSound implements Keyed {
   woolPlace('Wool place', 'minecraft:block.wool.place'),
   woolStep('Wool step', 'minecraft:block.wool.step');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const BlockSound(this.displayName, this.key);

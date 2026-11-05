@@ -7,15 +7,17 @@ final Map<String, ToolEnchantment> _toolEnchantmentByKey = {for (final e in Tool
     e.key: e};
 
 enum ToolEnchantment implements Enchantment {
-
   efficiency('Efficiency', 'minecraft:efficiency', 5),
   fortune('Fortune', 'minecraft:fortune', 3),
   luckOfTheSea('Luck Of The Sea', 'minecraft:luck_of_the_sea', 3),
   lure('Lure', 'minecraft:lure', 3),
   silkTouch('Silk Touch', 'minecraft:silk_touch', 1);
 
+  @override
   final String displayName;
+  @override
   final String key;
+  @override
   final int maxLevel;
 
   const ToolEnchantment(this.displayName, this.key, this.maxLevel);

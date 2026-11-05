@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, SoundSource> _soundSourceByKey = {for (final e in SoundSource.values) e.key: e};
 
 enum SoundSource implements Keyed {
-
   master('Master', 'master'),
   music('Music', 'music'),
   record('Record', 'record'),
@@ -19,7 +18,9 @@ enum SoundSource implements Keyed {
   voice('Voice', 'voice'),
   ui('Ui', 'ui');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const SoundSource(this.displayName, this.key);

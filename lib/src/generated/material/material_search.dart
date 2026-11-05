@@ -9,7 +9,6 @@ final Map<String, MaterialSearchEntry> _materialSearchEntryByKey = {for (final e
     MaterialSearchEntry.values) e.key: e};
 
 enum MaterialCategory implements SearchCategory {
-
   block('Block', 'block', 1),
   armor('Armor', 'armor', 2),
   tool('Tool', 'tool', 4),
@@ -18,8 +17,11 @@ enum MaterialCategory implements SearchCategory {
   dye('Dye', 'dye', 32),
   spawnEgg('Spawn Egg', 'spawn_egg', 64);
 
+  @override
   final String displayName;
+  @override
   final String key;
+  @override
   final int mask;
 
   const MaterialCategory(this.displayName, this.key, this.mask);
@@ -29,8 +31,8 @@ enum MaterialCategory implements SearchCategory {
     return _materialCategoryByKey[key];
   }
 }
-enum MaterialSearchEntry implements SearchableMaterial {
 
+enum MaterialSearchEntry implements SearchableMaterial {
   acaciaBoat('Acacia Boat', 'minecraft:acacia_boat', 'acacia boat', ['acacia', 'boat'], 0),
   acaciaButton('Acacia Button', 'minecraft:acacia_button', 'acacia button', ['acacia', 'button'],
       1),
@@ -2622,10 +2624,15 @@ enum MaterialSearchEntry implements SearchableMaterial {
   zombifiedPiglinSpawnEgg('Zombified Piglin Spawn Egg', 'minecraft:zombified_piglin_spawn_egg',
       'zombified piglin spawn egg', ['zombified', 'piglin', 'spawn', 'egg'], 64);
 
+  @override
   final String displayName;
+  @override
   final String key;
+  @override
   final String searchKey;
+  @override
   final List<String> terms;
+  @override
   final int categories;
 
   const MaterialSearchEntry(this.displayName, this.key, this.searchKey, this.terms,

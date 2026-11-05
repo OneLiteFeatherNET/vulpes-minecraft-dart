@@ -8,7 +8,6 @@ final Map<String, NamedTextColor> _namedTextColorByKey = {for (final e in NamedT
     e.key: e};
 
 enum NamedTextColor implements Keyed {
-
   aqua('Aqua', 'aqua', RgbColor.fromRGB(0x55ffff)),
   black('Black', 'black', RgbColor.fromRGB(0x000000)),
   blue('Blue', 'blue', RgbColor.fromRGB(0x5555ff)),
@@ -26,7 +25,9 @@ enum NamedTextColor implements Keyed {
   white('White', 'white', RgbColor.fromRGB(0xffffff)),
   yellow('Yellow', 'yellow', RgbColor.fromRGB(0xffff55));
 
+  @override
   final String displayName;
+  @override
   final String key;
   final RgbColor color;
 

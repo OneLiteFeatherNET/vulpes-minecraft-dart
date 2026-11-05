@@ -3,6 +3,7 @@
 
 export 'advancement.dart';
 export 'banner.dart';
+export 'block.dart';
 export 'bossbar.dart';
 export 'color.dart';
 export 'component.dart';
@@ -13,6 +14,7 @@ export 'item.dart';
 export 'material.dart';
 export 'painting.dart';
 export 'sound.dart';
+export 'src/api/block_state_spec.dart';
 export 'src/api/component_category.dart';
 export 'src/api/component_schema.dart';
 export 'src/api/enchantment.dart';

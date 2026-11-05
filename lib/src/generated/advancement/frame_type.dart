@@ -6,12 +6,13 @@ import '../../api/keyed.dart';
 final Map<String, FrameType> _frameTypeByKey = {for (final e in FrameType.values) e.key: e};
 
 enum FrameType implements Keyed {
-
   task('Task', 'task'),
   challenge('Challenge', 'challenge'),
   goal('Goal', 'goal');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const FrameType(this.displayName, this.key);

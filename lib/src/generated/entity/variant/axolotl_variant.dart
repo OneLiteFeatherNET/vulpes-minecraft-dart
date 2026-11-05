@@ -7,14 +7,15 @@ final Map<String, AxolotlVariant> _axolotlVariantByKey = {for (final e in Axolot
     e.key: e};
 
 enum AxolotlVariant implements Keyed {
-
   lucy('Lucy', 'lucy', 0),
   wild('Wild', 'wild', 1),
   gold('Gold', 'gold', 2),
   cyan('Cyan', 'cyan', 3),
   blue('Blue', 'blue', 4);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int id;
 

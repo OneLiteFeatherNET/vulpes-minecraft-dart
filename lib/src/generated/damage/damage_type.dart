@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, DamageType> _damageTypeByKey = {for (final e in DamageType.values) e.key: e};
 
 enum DamageType implements Keyed {
-
   arrow('Arrow', 'minecraft:arrow', 'arrow', 0.1),
   badRespawnPoint('Bad Respawn Point', 'minecraft:bad_respawn_point', 'badRespawnPoint', 0.1),
   cactus('Cactus', 'minecraft:cactus', 'cactus', 0.1),
@@ -53,7 +52,9 @@ enum DamageType implements Keyed {
   wither('Wither', 'minecraft:wither', 'wither', 0.0),
   witherSkull('Wither Skull', 'minecraft:wither_skull', 'witherSkull', 0.1);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final String messageId;
   final double exhaustion;

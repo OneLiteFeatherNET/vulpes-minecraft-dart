@@ -7,7 +7,6 @@ final Map<String, WeaponMaterial> _weaponMaterialByKey = {for (final e in Weapon
     e.key: e};
 
 enum WeaponMaterial implements Keyed {
-
   copperAxe('Copper Axe', 'minecraft:copper_axe', 1),
   copperHoe('Copper Hoe', 'minecraft:copper_hoe', 1),
   copperPickaxe('Copper Pickaxe', 'minecraft:copper_pickaxe', 1),
@@ -53,7 +52,9 @@ enum WeaponMaterial implements Keyed {
   woodenSpear('Wooden Spear', 'minecraft:wooden_spear', 1),
   woodenSword('Wooden Sword', 'minecraft:wooden_sword', 1);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int maxStackSize;
 

@@ -7,7 +7,6 @@ final Map<String, PaintingVariant> _paintingVariantByKey = {for (final e in Pain
     e.key: e};
 
 enum PaintingVariant implements Keyed {
-
   alban('Alban', 'minecraft:alban', 1, 1, 'minecraft:alban'),
   aztec('Aztec', 'minecraft:aztec', 1, 1, 'minecraft:aztec'),
   aztec2('Aztec2', 'minecraft:aztec2', 1, 1, 'minecraft:aztec2'),
@@ -60,7 +59,9 @@ enum PaintingVariant implements Keyed {
   wind('Wind', 'minecraft:wind', 2, 2, 'minecraft:wind'),
   wither('Wither', 'minecraft:wither', 2, 2, 'minecraft:wither');
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int width;
   final int height;

@@ -7,7 +7,6 @@ final Map<String, ArmorEnchantment> _armorEnchantmentByKey = {for (final e in
     ArmorEnchantment.values) e.key: e};
 
 enum ArmorEnchantment implements Enchantment {
-
   aquaAffinity('Aqua Affinity', 'minecraft:aqua_affinity', 1),
   bindingCurse('Binding Curse', 'minecraft:binding_curse', 1),
   blastProtection('Blast Protection', 'minecraft:blast_protection', 4),
@@ -22,8 +21,11 @@ enum ArmorEnchantment implements Enchantment {
   swiftSneak('Swift Sneak', 'minecraft:swift_sneak', 3),
   thorns('Thorns', 'minecraft:thorns', 3);
 
+  @override
   final String displayName;
+  @override
   final String key;
+  @override
   final int maxLevel;
 
   const ArmorEnchantment(this.displayName, this.key, this.maxLevel);

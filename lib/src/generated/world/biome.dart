@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, Biome> _biomeByKey = {for (final e in Biome.values) e.key: e};
 
 enum Biome implements Keyed {
-
   bambooJungle('Bamboo Jungle', 'minecraft:bamboo_jungle', 0.95, 0.9, true),
   basaltDeltas('Basalt Deltas', 'minecraft:basalt_deltas', 2.0, 0.0, false),
   birchForest('Birch Forest', 'minecraft:birch_forest', 0.6, 0.6, true),
@@ -57,7 +56,9 @@ enum Biome implements Keyed {
   windsweptGravellyHills('Windswept Gravelly Hills', 'minecraft:windswept_gravelly_hills', 0.2, 0.3,
       true);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final double temperature;
   final double downfall;

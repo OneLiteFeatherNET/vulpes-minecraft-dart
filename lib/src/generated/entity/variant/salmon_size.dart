@@ -6,12 +6,13 @@ import '../../../api/keyed.dart';
 final Map<String, SalmonSize> _salmonSizeByKey = {for (final e in SalmonSize.values) e.key: e};
 
 enum SalmonSize implements Keyed {
-
   small('Small', 'small', 0),
   medium('Medium', 'medium', 1),
   large('Large', 'large', 2);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int id;
 

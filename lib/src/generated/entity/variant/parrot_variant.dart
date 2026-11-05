@@ -7,14 +7,15 @@ final Map<String, ParrotVariant> _parrotVariantByKey = {for (final e in ParrotVa
     e};
 
 enum ParrotVariant implements Keyed {
-
   redBlue('Red Blue', 'red_blue', 0),
   blue('Blue', 'blue', 1),
   green('Green', 'green', 2),
   yellowBlue('Yellow Blue', 'yellow_blue', 3),
   grey('Grey', 'grey', 4);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int id;
 

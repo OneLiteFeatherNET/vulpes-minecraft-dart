@@ -6,12 +6,13 @@ import '../../api/keyed.dart';
 final Map<String, BossBarFlag> _bossBarFlagByKey = {for (final e in BossBarFlag.values) e.key: e};
 
 enum BossBarFlag implements Keyed {
-
   darkenScreen('Darken Screen', 'darken_screen'),
   playBossMusic('Play Boss Music', 'play_boss_music'),
   createWorldFog('Create World Fog', 'create_world_fog');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const BossBarFlag(this.displayName, this.key);

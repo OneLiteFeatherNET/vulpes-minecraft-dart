@@ -7,7 +7,6 @@ final Map<String, ToolMaterial> _toolMaterialByKey = {for (final e in ToolMateri
     e};
 
 enum ToolMaterial implements Keyed {
-
   copperAxe('Copper Axe', 'minecraft:copper_axe', 1),
   copperHoe('Copper Hoe', 'minecraft:copper_hoe', 1),
   copperPickaxe('Copper Pickaxe', 'minecraft:copper_pickaxe', 1),
@@ -47,7 +46,9 @@ enum ToolMaterial implements Keyed {
   woodenShovel('Wooden Shovel', 'minecraft:wooden_shovel', 1),
   woodenSword('Wooden Sword', 'minecraft:wooden_sword', 1);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int maxStackSize;
 

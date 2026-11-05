@@ -7,7 +7,6 @@ final Map<String, FoodMaterial> _foodMaterialByKey = {for (final e in FoodMateri
     e};
 
 enum FoodMaterial implements Keyed {
-
   apple('Apple', 'minecraft:apple', 64),
   bakedPotato('Baked Potato', 'minecraft:baked_potato', 64),
   beef('Beef', 'minecraft:beef', 64),
@@ -53,7 +52,9 @@ enum FoodMaterial implements Keyed {
   tropicalFish('Tropical Fish', 'minecraft:tropical_fish', 64),
   tropicalFishBucket('Tropical Fish Bucket', 'minecraft:tropical_fish_bucket', 1);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int maxStackSize;
 

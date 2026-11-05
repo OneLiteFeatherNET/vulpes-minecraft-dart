@@ -7,7 +7,6 @@ final Map<String, MonsterEntityType> _monsterEntityTypeByKey = {for (final e in
     MonsterEntityType.values) e.key: e};
 
 enum MonsterEntityType implements Keyed {
-
   blaze('Blaze', 'minecraft:blaze'),
   bogged('Bogged', 'minecraft:bogged'),
   breeze('Breeze', 'minecraft:breeze'),
@@ -51,7 +50,9 @@ enum MonsterEntityType implements Keyed {
   zombieVillager('Zombie Villager', 'minecraft:zombie_villager'),
   zombifiedPiglin('Zombified Piglin', 'minecraft:zombified_piglin');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const MonsterEntityType(this.displayName, this.key);

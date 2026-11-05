@@ -7,13 +7,15 @@ final Map<String, MetaEnchantment> _metaEnchantmentByKey = {for (final e in Meta
     e.key: e};
 
 enum MetaEnchantment implements Enchantment {
-
   mending('Mending', 'minecraft:mending', 1),
   unbreaking('Unbreaking', 'minecraft:unbreaking', 3),
   vanishingCurse('Vanishing Curse', 'minecraft:vanishing_curse', 1);
 
+  @override
   final String displayName;
+  @override
   final String key;
+  @override
   final int maxLevel;
 
   const MetaEnchantment(this.displayName, this.key, this.maxLevel);

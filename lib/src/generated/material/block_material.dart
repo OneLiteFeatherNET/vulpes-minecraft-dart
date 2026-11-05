@@ -7,7 +7,6 @@ final Map<String, BlockMaterial> _blockMaterialByKey = {for (final e in BlockMat
     e};
 
 enum BlockMaterial implements Keyed {
-
   acaciaButton('Acacia Button', 'minecraft:acacia_button', 64),
   acaciaDoor('Acacia Door', 'minecraft:acacia_door', 64),
   acaciaFence('Acacia Fence', 'minecraft:acacia_fence', 64),
@@ -1116,7 +1115,9 @@ enum BlockMaterial implements Keyed {
   yellowWool('Yellow Wool', 'minecraft:yellow_wool', 64),
   zombieHead('Zombie Head', 'minecraft:zombie_head', 64);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int maxStackSize;
 

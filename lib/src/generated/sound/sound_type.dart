@@ -6,14 +6,15 @@ import '../../api/keyed.dart';
 final Map<String, SoundType> _soundTypeByKey = {for (final e in SoundType.values) e.key: e};
 
 enum SoundType implements Keyed {
-
   block('Block', 'block'),
   entity('Entity', 'entity'),
   music('Music', 'music'),
   item('Item', 'item'),
   ambient('Ambient', 'ambient');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const SoundType(this.displayName, this.key);

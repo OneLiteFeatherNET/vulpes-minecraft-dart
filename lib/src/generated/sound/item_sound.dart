@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, ItemSound> _itemSoundByKey = {for (final e in ItemSound.values) e.key: e};
 
 enum ItemSound implements Keyed {
-
   armorEquipChain('Armor equip Chain', 'minecraft:item.armor.equip_chain'),
   armorEquipCopper('Armor equip Copper', 'minecraft:item.armor.equip_copper'),
   armorEquipDiamond('Armor equip Diamond', 'minecraft:item.armor.equip_diamond'),
@@ -126,7 +125,9 @@ enum ItemSound implements Keyed {
   wolfArmorDamage('Wolf Armor damage', 'minecraft:item.wolf_armor.damage'),
   wolfArmorRepair('Wolf Armor repair', 'minecraft:item.wolf_armor.repair');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const ItemSound(this.displayName, this.key);

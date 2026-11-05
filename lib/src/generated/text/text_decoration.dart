@@ -7,14 +7,15 @@ final Map<String, TextDecoration> _textDecorationByKey = {for (final e in TextDe
     e.key: e};
 
 enum TextDecoration implements Keyed {
-
   bold('Bold', 'bold'),
   italic('Italic', 'italic'),
   obfuscated('Obfuscated', 'obfuscated'),
   strikethrough('Strikethrough', 'strikethrough'),
   underlined('Underlined', 'underlined');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const TextDecoration(this.displayName, this.key);

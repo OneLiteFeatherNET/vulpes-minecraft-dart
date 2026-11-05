@@ -7,7 +7,6 @@ final Map<String, AnimalEntityType> _animalEntityTypeByKey = {for (final e in
     AnimalEntityType.values) e.key: e};
 
 enum AnimalEntityType implements Keyed {
-
   allay('Allay', 'minecraft:allay'),
   armadillo('Armadillo', 'minecraft:armadillo'),
   bee('Bee', 'minecraft:bee'),
@@ -44,7 +43,9 @@ enum AnimalEntityType implements Keyed {
   wolf('Wolf', 'minecraft:wolf'),
   zombieHorse('Zombie Horse', 'minecraft:zombie_horse');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const AnimalEntityType(this.displayName, this.key);

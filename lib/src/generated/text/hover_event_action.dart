@@ -7,12 +7,13 @@ final Map<String, HoverEventAction> _hoverEventActionByKey = {for (final e in
     HoverEventAction.values) e.key: e};
 
 enum HoverEventAction implements Keyed {
-
   showEntity('Show Entity', 'show_entity'),
   showItem('Show Item', 'show_item'),
   showText('Show Text', 'show_text');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const HoverEventAction(this.displayName, this.key);

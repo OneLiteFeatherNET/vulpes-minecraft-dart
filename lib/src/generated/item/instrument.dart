@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, Instrument> _instrumentByKey = {for (final e in Instrument.values) e.key: e};
 
 enum Instrument implements Keyed {
-
   admireGoatHorn('Admire Goat Horn', 'minecraft:admire_goat_horn', 256.0, 7.0),
   callGoatHorn('Call Goat Horn', 'minecraft:call_goat_horn', 256.0, 7.0),
   dreamGoatHorn('Dream Goat Horn', 'minecraft:dream_goat_horn', 256.0, 7.0),
@@ -16,7 +15,9 @@ enum Instrument implements Keyed {
   singGoatHorn('Sing Goat Horn', 'minecraft:sing_goat_horn', 256.0, 7.0),
   yearnGoatHorn('Yearn Goat Horn', 'minecraft:yearn_goat_horn', 256.0, 7.0);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final double range;
   final double useDuration;

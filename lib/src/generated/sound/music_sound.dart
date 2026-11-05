@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, MusicSound> _musicSoundByKey = {for (final e in MusicSound.values) e.key: e};
 
 enum MusicSound implements Keyed {
-
   creativeCreative('Creative creative', 'minecraft:music.creative'),
   creditsCredits('Credits credits', 'minecraft:music.credits'),
   dragonDragon('Dragon dragon', 'minecraft:music.dragon'),
@@ -41,7 +40,9 @@ enum MusicSound implements Keyed {
   overworldSwamp('Overworld swamp', 'minecraft:music.overworld.swamp'),
   underWaterUnderWater('Under Water under Water', 'minecraft:music.under_water');
 
+  @override
   final String displayName;
+  @override
   final String key;
 
   const MusicSound(this.displayName, this.key);

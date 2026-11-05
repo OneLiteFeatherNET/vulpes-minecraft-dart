@@ -6,7 +6,6 @@ import '../../api/keyed.dart';
 final Map<String, JukeboxSong> _jukeboxSongByKey = {for (final e in JukeboxSong.values) e.key: e};
 
 enum JukeboxSong implements Keyed {
-
   disc11('11', 'minecraft:11', 71.0, 11),
   disc13('13', 'minecraft:13', 178.0, 1),
   disc5('5', 'minecraft:5', 178.0, 15),
@@ -30,7 +29,9 @@ enum JukeboxSong implements Keyed {
   wait('Wait', 'minecraft:wait', 238.0, 12),
   ward('Ward', 'minecraft:ward', 251.0, 10);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final double lengthInSeconds;
   final int comparatorOutput;

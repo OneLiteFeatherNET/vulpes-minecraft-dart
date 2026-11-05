@@ -7,14 +7,15 @@ final Map<String, FireworkShape> _fireworkShapeByKey = {for (final e in Firework
     e};
 
 enum FireworkShape implements Keyed {
-
   smallBall('Small Ball', 'small_ball', 0),
   largeBall('Large Ball', 'large_ball', 1),
   star('Star', 'star', 2),
   creeper('Creeper', 'creeper', 3),
   burst('Burst', 'burst', 4);
 
+  @override
   final String displayName;
+  @override
   final String key;
   final int id;
 
