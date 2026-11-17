@@ -4,3 +4,4 @@
 export 'src/api/block_state_spec.dart';
 export 'src/api/component_schema.dart';
 export 'src/generated/block/block_states.dart';
+export 'src/generated/block/block_tags.dart';
